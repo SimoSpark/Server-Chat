@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap_main" prefHeight="400.0" prefWidth="467.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.serverr.HelloController">
+    <children>
+        <Label layoutX="114" layoutY="26" text="Mini Projet : Chat  Client/Serveur >_>">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="23"/>
+            </font>
+        </Label>
+        <ScrollPane fx:id="sp_main" fitToWidth="true" layoutX="30" layoutY="70" prefHeight="256" prefWidth="418">
+            <content>
+                <VBox fx:id="vbox_messages" prefHeight="248" prefWidth="412"/>
+            </content>
+        </ScrollPane>
+        <TextField fx:id="tf_message" layoutX="34.0" layoutY="340" prefHeight="26" prefWidth="361"/>
+        <Button fx:id="button_send" layoutX="404" layoutY="340" text="Send"/>
+    </children>
+</AnchorPane>
