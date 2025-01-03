@@ -56,7 +56,7 @@ public class HelloController implements Initializable {
             if (!messageToSend.isEmpty() && server != null) {
                 sendMessage(messageToSend);
             }
-            //HNA FIN 7BSST
+
         });
     }
 

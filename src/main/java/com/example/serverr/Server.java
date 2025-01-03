@@ -59,19 +59,6 @@ public class Server {
                 }).start();
         }
 
-        private void closeEverything(Socket socket, BufferedReader bufferedReader, BufferedWriter bufferedWriter){
-                try{
-                        if (bufferedReader != null) {
-                                bufferedReader.close();
-                        }
-                        if (bufferedWriter != null) {
-                                bufferedWriter.close();
-                        }
-                        if (socket != null) {
-                                socket.close();
-                        }
-                }catch(IOException e){
-                        e.printStackTrace();
-                }
+
         }
-}
+
